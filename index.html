@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>museum change new page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-block">
+            <img class="icon-img" src="assets/icon.png" alt="">
+        </div>
+        <ul class="pages-links-block">
+            <li class="pages-links"><a href="#">Главная</a></li>
+            <li class="pages-links"><a href="#">О музее</a></li>
+            <li class="pages-links"><a href="#">Новости</a></li>
+            <li class="pages-links"><a href="#">Экспонаты</a></li>
+        </ul>
+        <ul class="user-block">
+            <li class="users-links"><a href="#">Админка</a></li>
+            <li class="users-links"><a href="#">Профиль</a></li>
+            <li class="users-links"><a href="#">Выйти</a></li>
+        </ul>
+    </nav>
+
+    <div class="wraper">
+        <div class="add-new">
+            <div class="title-block">
+                <p>Изменить новость</p>
+            </div>
+            <div class="horysontal-line"><hr></div>
+            <div class="form-block">
+                <form class="form">
+                    <div class="">
+                        <div>
+                            <input type="text" class="input-text" required>
+                            <div class="text-wraper">Название новости</div>
+                        </div>
+                    </div>
+                    
+                    <div class="textarea-box">
+                        <p>Описание новости</p>
+                        <textarea autocomplete="off" class="textarea" required></textarea>
+                    </div>
+                    
+                    <div>
+                        <p class="title-image">Изменить фото (опционально) </p>
+                        <div class="file-part">
+                            <div class="input-image-block">
+                                <div class="task-image">
+                                    <p>Горизонтальное</p>
+                                </div>
+                                <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                                <label for="input__file" class="input__file-button">
+                                    <span class="input__file-icon-wrapper"><i class="ri-upload-2-line"></i></span>
+                                    <span class="input__file-button-text">Выберите файл</span>
+                                </label>
+                                <img class="image-wraper" src="#" alt="Предпросмотр изображения" style="display: none;">
+                            </div>
+                            <div class="current-photo">
+                                <p>Нынешнее фото</p>
+                                <img src="assets/img1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horysontal-line second-line"><hr></div>
+                    <input type="submit" value="Записать изменения" class="add-button">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-block">
+        <footer>
+            <p>Физматикус 2025 ©. Все права защищены</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
